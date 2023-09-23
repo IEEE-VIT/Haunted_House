@@ -31,8 +31,18 @@ rooms = {
         "puzzle": "You see a locked chest with a numeric keypad. You need a code to open it. It can only be found in an old book.",
         "ending":"You have successfully secured the treasure! Thanks for playing with us"
     },
+    "secretroom": {
+        "description": "You are in a old,dusty room filled with lots of unopened boxes and antiques.",
+        "exits": {"east": "kitchen", "west": "guestroom"},
+        "items": {"big box","golden key"},
+    },
+    "guestroom": {
+        "description": "You enter into a clean,tidy room untouched in years as it seems.",
+        "exits": {"north": "bedroom"},
+        "items": {"blood stained watch"},
+    },
     "basement":{
-        "description": "You are in a dimly lit basement with a musty smell.",
+        "description": "You are in a dimly lit basement with a musty smell."
         "exits": {"upstairs": "hallway"},
         "items":{"knight's sword"}
     },
