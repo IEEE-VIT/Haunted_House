@@ -42,7 +42,8 @@ Award 20 points for finding the required item.
 '''
 def ghost_challenge(npc, score):
     
-    #Write your code here
+    print(npc)
+    return score+20
 
     return score
 

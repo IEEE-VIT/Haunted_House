@@ -37,3 +37,18 @@ Find the treasure box in one of the rooms. Score maximum points by completing ch
 - Wait for your PR to be reviewed and merged
 - For more info on how to contribute check out <a href="https://github.com/IEEE-VIT/Haunted_House/blob/main/CONTRIBUTING.md">```CONTRIBUTING.md```</a>
 
+## Description of NCPS:
+```ghost```: A translucent figure floats in front of you.<br>
+```witch```: A wicked witch stands before you..<br>
+```knight```: A brave knight in shining armor awaits your arrival.<br>
+```sorcerer```: A mysterious sorcerer with a pointed hat stands here.<br>
+
+## Description of Rooms:
+```hallway```: You are in a dark and spooky hallway.<br>
+```kitchen```: You are in a dusty old kitchen with cobwebs.<br>
+```pantry```: You are in a small pantry filled with shelves.<br>
+```living_room```: You are in a creepy living room with creaky furniture.<br>
+```library```: You are in a dimly lit library filled with old books.<br>
+```bedroom```: You are in a spooky bedroom with a large, unmade bed.<br>
+```basement```: You are in a dimly lit basement with a musty smell.<br>
+```attic```: You are in a dusty attic filled with old furniture and cobwebs.<br>
