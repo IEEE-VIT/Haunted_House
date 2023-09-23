@@ -133,6 +133,11 @@ Increase 50 points if the tresure box gets unlocked.
 Return appropriate message if any of the conditions are not met.
 '''
 def unlock(tokens):
+    for i in inventory:
+        if i=="old_book":
+            flag = 1
+    if current_room=="bedroom" and flag == 1:
+        print("You read the old book and found a code. The locked treasure box has been unlocked.")
     pass
 
 
