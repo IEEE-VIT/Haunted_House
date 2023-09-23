@@ -11,8 +11,8 @@ class Leaderboard:
     and append a dictionary of {name, score} in the list - data
     '''
     def load(self):
-        self.data = []
-        #write your code here
+        with open('lb.csv',mode ="r") as file:
+            data=csv.DictReader(file)
         pass
 
 
