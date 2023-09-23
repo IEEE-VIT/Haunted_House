@@ -26,13 +26,22 @@ If wrong answer then reduce 5 points.
 Give proper print statements where ever necessary.
 '''
 def knight_challenge(npc, score):
-    print(f"Knight: {npc['dialogue']}")
+    print(f"Knight: {npc[' dialogue ']}")
     print(f"Knight: {npc['reward']}")
     words = ["HARDWORK", "SUNFLOWER", "HAUNTED", "MORGUE"]
-
-    # Write code here
-
+    pick= random.choice(words)
+    random_word = random.sample(pick , len(pick))
+    final=input("enter the correct word: ")
+    if final== pick:
+        print("correct answer. Your points have been increased by 20")
+        score+=20
+    else:
+        print("Wrong answer. Your points havew been deducted by 5")
+        score-=5
     return score
+
+
+    
 
 
 
