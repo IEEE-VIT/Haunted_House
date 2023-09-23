@@ -26,9 +26,9 @@ npcs = {
         "reward": "You answered my riddle correctly. You get 20 points",
     }
     "anabella":{
-        "description": "a cute doll with two plaits is looking forward to see you"
-        "dialogue": "All i need is your soul"
-        "item_required":"knife to cut plaits"
-        "reward": "Ahh! You have cut my plaits, all my energy and powers have been transfered to you"
+        "description": "a cute doll with two plaits is looking forward to see you",
+        "dialogue": "All i need is your soul",
+        "item_required":"knife to cut plaits",
+        "reward": "Ahh! You have cut my plaits, all my energy and powers have been transfered to you",
     }
 }
