@@ -93,8 +93,22 @@ Return an appropriate string for the either of the following cases:
 4. There is nothing to take in the room.
 '''
 def take_item(tokens):
+    global inventory, score
+    current_room_items = rooms[current_room]["items"]
+    
+    if not current_room_items:
+        return "There is nothing to take in the room."
     item = " ".join(tokens[tokens.index("take") + 1:])
-    pass
+    if item not in current_room_items:
+        return f"There is no {item} in this room."
+    if item == "treasure box":
+        if "locked" in rooms[current_room]["items"]["treasure box"]:
+            return "The treasure box is locked. You cannot take it until it's unlocked."
+    inventory.append(item)
+    current_room_items.remove(item)
+    score += 10
+
+    return f"Took the {item}"
 
 
 '''
