@@ -47,6 +47,7 @@ Return a string which gives the final score.
 '''
 def quit_game():
     #write code here
+    global score
     print("The game has ended your score is:", score)
     
 
