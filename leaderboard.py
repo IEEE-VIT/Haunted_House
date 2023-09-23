@@ -5,15 +5,14 @@ class Leaderboard:
         self.filename = filename
         self.data = []
 
-    '''
-    Write the load function,
-    it should read the data in the csv file,
-    and append a dictionary of {name, score} in the list - data
-    '''
+   # Imports the contents of the CSV as dictionaries in data - 
     def load(self):
         self.data = []
-        #write your code here
-        pass
+        with open(self.filename, 'r') as f:
+            reader = csv.reader(f)
+            for row in f:
+                temp = row.split(',')
+                self.data.append({temp[0]:int(temp[1])})
 
 
 
