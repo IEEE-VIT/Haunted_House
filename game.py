@@ -44,8 +44,8 @@ def handle_user_command(user_input):
 Return a string which gives the final score.
 '''
 def quit_game():
-    #write code here
-    pass
+    print("Your score is =", score)
+    exit()
 
 
 '''
