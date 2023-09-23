@@ -58,5 +58,13 @@ def sorcerer_challenge(npc, score):
     print(f"Sorcerer: {npc['dialogue']}")
 
 # write your code here
+    print(f"sorcerer: {npc['riddle']}")
+    a=input("Tell me the answer to the riddle: ")
+    if a == 'answer':
+        print(f"{['reward']}")
+        score == '20'
+    else:
+        print(f"Your answer is wrong and you loose 5 points")
+        score == '-5'
 
     return score
