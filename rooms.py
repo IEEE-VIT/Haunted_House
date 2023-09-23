@@ -40,9 +40,10 @@ rooms = {
         "description": "You are in a dusty attic filled with old furniture and cobwebs.",
         "exits": {"downstairs": "hallway"},
         "items": {"old_book"}
-    }
-    "dining_room":{
-        "description":"You are in a room with dining table and chairs"
-        "exits": {"right side"}
+    },
+    "dining room":{
+        "description":"You are in a room with dining table and chairs",
+        "exits": {"northeast": "pantry"},
+        "items": {"vintage cutlery set"}
     }
 }
