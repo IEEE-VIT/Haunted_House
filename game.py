@@ -80,7 +80,12 @@ def take_item(tokens):
 This function should return a string with the contents of the inventory
 '''
 def inventory_status():
-    pass
+    ans = ""
+    for i in inventory:
+        ans += i
+        ans += '\n'
+    return ans
+
 
 
 '''
