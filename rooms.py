@@ -41,4 +41,8 @@ rooms = {
         "exits": {"downstairs": "hallway"},
         "items": {"old_book"}
     }
+    "dining_room":{
+        "description":"You are in a room with dining table and chairs"
+        "exits": {"right side"}
+    }
 }
