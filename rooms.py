@@ -41,4 +41,9 @@ rooms = {
         "exits": {"downstairs": "hallway"},
         "items": {"old_book"}
     }
+    "balcony":{
+        "description": "You are in a windy balcony and there is a thunderstorm outside",
+        "exits": {"bedroom","staircase leading downstairs"},
+        "items": {"umbrella"} 
+    }
 }
