@@ -40,5 +40,15 @@ rooms = {
         "description": "You are in a dusty attic filled with old furniture and cobwebs.",
         "exits": {"downstairs": "hallway"},
         "items": {"old_book"}
+    },
+    "gamingroom":{
+        "description": "You are in a room full of fun and delightfulness.",
+        "exits": {"south": "upstairs"},
+        "items": {"pc"}
+    },
+    "prayerroom":{
+        "description": "You are in a dusty attic filled with old furniture and cobwebs.",
+        "exits": {"north": "livingroom"},
+        "items": {"bhagvatgitagit"}
     }
 }
