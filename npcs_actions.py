@@ -13,7 +13,7 @@ def witch_challenge(npc,score):
     print(f"Witch: {npc['dialogue']}")
     print(f"Witch: Excellent! {npc['reward']}")
     
-    # Write code here
+    
 
     return score
 
@@ -67,7 +67,12 @@ else they loose 5 points.
 '''
 def sorcerer_challenge(npc, score):
     print(f"Sorcerer: {npc['dialogue']}")
-
-# write your code here
-
-    return score
+    print("What has keys but can't open locks?")
+    answer=input("Enter your answer: ")
+    if answer=="piano":
+        print("Correct answer. 20 points awarded")
+        score+=20
+    else:
+        print("Wrong answer. 5 points deducted")
+        score-=5
+        return score
