@@ -12,6 +12,9 @@ class Leaderboard:
     '''
     def load(self):
         self.data = []
+        cr=csv.reader(self)
+        for i in cr:
+            self.data.append[]
         #write your code here
         pass
 
