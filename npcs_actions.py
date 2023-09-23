@@ -30,8 +30,20 @@ def knight_challenge(npc, score):
     print(f"Knight: {npc['reward']}")
     words = ["HARDWORK", "SUNFLOWER", "HAUNTED", "MORGUE"]
 
-    # Write code here
+    word = words[random.randrange(0, 4)]
+    random_word = random.sample(word, len(word))
+    jumbled = ''.join(random_word)
 
+    print("The jumbled word is: ", jumbled)
+    guess = input("Enter the original word: ")
+    if(jumbled == guess):
+        score += 20
+        print("Correct!! you get +20")
+    else:
+        score -= 5
+        print("Incorrect!! you get -5")
+    print("The original word was: ", word)
+    
     return score
 
 
