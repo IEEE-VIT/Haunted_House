@@ -45,11 +45,13 @@ Return a string which gives the final score.
 '''
 def quit_game(final_score):
     return f"Final score: {final_score}"
-        pass
 
-score=478
+score=482
 result=quit_game(score)
-print ("Your Final score is = "score)
+print("Final score = ",score)
+    pass
+
+
 
 '''
 This func should return the information of the room. 
