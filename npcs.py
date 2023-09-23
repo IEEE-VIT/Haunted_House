@@ -25,4 +25,12 @@ npcs = {
         "answer": "piano",
         "reward": "You answered my riddle correctly. You get 20 points",
     }
+    "gopal" : {
+        "description": "A random Indian with zero rizz.",
+        "dialogue": "Hello I am Gopal from Bhopal.",
+        "riddle": "Guess where the gas tragedy happened?",
+        "answer": "Bhopal",
+        "reward": "You answered my riddle correctly. You get a hug",
+    }
+
 }
