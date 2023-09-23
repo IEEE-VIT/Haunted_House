@@ -26,7 +26,13 @@ Process the user's input by tokenizing and lemmatizing it, removing stop words.
 Return a list of processed tokens.
 """
 def process_user_input(user_input):
-    pass
+    s=sent_tokenize(user_input)
+    l=[]
+    for i in s:
+        if i in stopwords.words("English"):
+            continue
+        l.append(word_tokenize(i))
+    return l
 
 
 '''
@@ -36,23 +42,35 @@ return appropriate functions for each of those key words.
 If none of the key words exists in the tokens, return "I don't understand that command."
 '''
 def handle_user_command(user_input):
+    user_input = process_user_input(user_input)
     global current_room, score
-    if "look" in user_input:
-        look_around()
-    elif "quit" in user_input:
-        quit_game()
-    elif "take" in user_input :
-        take_item()
-    elif "inventory" in user_input:
-        inventory_status()
-    elif "go" in user_input:
-        go_to()
-    elif "talk" in user_input:
-        talk_to()
-    elif "unlock" in user_input:
-        unlock()
+    command_given = False
+    for sentemce in user_input:
+        for word in sentemce:
+            if "look" in user_input:
+                look_around()
+                command_given = True
+            elif "quit" in user_input:
+                quit_game()
+                command_given = True
+            elif "take" in user_input :
+                take_item()
+                command_given = True
+            elif "inventory" in user_input:
+                inventory_status()
+                command_given = True
+            elif "go" in user_input:
+                go_to()
+                command_given = True
+            elif "talk" in user_input:
+                talk_to()
+                command_given = True
+            elif "unlock" in user_input:
+                unlock()
+                command_given = True
     else:
-        print("I don't understand that command")
+        if command_given==False:
+            print("I don't understand that command")
 '''
 Return a string which gives the final score.
 '''
