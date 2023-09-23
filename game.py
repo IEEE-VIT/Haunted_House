@@ -43,10 +43,13 @@ def handle_user_command(user_input):
 '''
 Return a string which gives the final score.
 '''
-def quit_game():
-    #write code here
-    pass
+def quit_game(final_score):
+    return f"Final score: {final_score}"
+        pass
 
+score=478
+result=quit_game(score)
+print ("Your Final score is = "score)
 
 '''
 This func should return the information of the room. 
