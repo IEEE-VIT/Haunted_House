@@ -47,6 +47,7 @@ Return a string which gives the final score.
 '''
 def quit_game():
     #write code here
+    return str(score)
     pass
 
 
