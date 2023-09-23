@@ -5,25 +5,25 @@ class Leaderboard:
         self.filename = filename
         self.data = []
 
-    # Loads the data from the csv file
-
+    '''
+    Write the load function,
+    it should read the data in the csv file,
+    and append a dictionary of {name, score} in the list - data
+    '''
     def load(self):
         self.data = []
-
-        with open(self.filename, 'r') as f:
-            reader = csv.reader(f)
-            for row in f:
-                self.data.append(row)
-
-
-
-    '''
-    Write the save function that saves all the scores to the CSV file 
-    in highest to lowest scores.
-    '''
-    def save(self):
         #write your code here
         pass
+
+
+
+   # Saves the output
+
+    def save(self):
+        with open(self.filename, 'w') as f:
+            writer = csv.writer(f)
+            for row in self.data:
+                writer.writerow(row)
 
 
     '''
