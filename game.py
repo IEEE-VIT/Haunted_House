@@ -44,11 +44,6 @@ def handle_user_command(user_input):
 Return a string which gives the final score.
 '''
 def quit_game(final_score):
-    return f"Final score: {final_score}"
-
-score=482
-result=quit_game(score)
-print("Final score = ",score)
     pass
 
 
@@ -84,7 +79,22 @@ def take_item(tokens):
 '''
 This function should return a string with the contents of the inventory
 '''
-def inventory_status():
+def inventory_status(inventory):
+    inventory_string = ""
+
+    for item, quantity in inventory.items():
+        inventory_string += f"{item}: {quantity}\n"
+
+    return inventory_string
+
+inventory_data = {
+    "Apples": 10,
+    "Bananas": 15,
+    "Oranges": 20,
+    "Grapes": 30,
+}
+result = inventory_status(inventory_data)
+print(result)
     pass
 
 
