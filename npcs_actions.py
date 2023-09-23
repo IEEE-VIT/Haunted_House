@@ -29,9 +29,19 @@ def knight_challenge(npc, score):
     print(f"Knight: {npc['dialogue']}")
     print(f"Knight: {npc['reward']}")
     words = ["HARDWORK", "SUNFLOWER", "HAUNTED", "MORGUE"]
-
-    # Write code here
-
+    num=(int)(random()*10)%4
+    string = words[num]
+    temp1= string
+    temp=string[5]
+    string[5]=string[1]
+    string[1]=temp
+    print(string)
+    print("Enter the cirrect word:\n")
+    s=input()
+    if(s==temp1):
+        score+=20
+    else:
+        score-=5
     return score
 
 
