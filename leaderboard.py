@@ -41,6 +41,7 @@ class Leaderboard:
     Display the scores of each and every person in the leaderboard
     '''
     def display(self):
-        pass
+        for i in self:
+            print(i)
 
 
